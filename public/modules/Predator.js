@@ -1,5 +1,5 @@
 var LiveForm = require("./LiveForm");
-var random = require("../../91919/modules/random");
+var random = require("./random");
 
 
 module.exports = class Predator extends LiveForm {

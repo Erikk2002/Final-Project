@@ -60,13 +60,12 @@ function setup() {
                     else if (data.weather == "autumn"){
                         fill ("orange");
                     }
-                    else if (data.weather == "winther"){
+                    else if (data.weather == "winter"){
                         fill ("rgb(204, 255, 255)");
                     }
                     else if (data.weather == "spring"){
                         fill("rgb(123, 163, 107)");
                     }
-                    rect(j * side, i * side, side, side);
                 }
                  else if (matrix[i][j] == 2) {
                     if (data.weather == "summer"){
@@ -75,16 +74,14 @@ function setup() {
                     else if (data.weather == "autumn"){
                         fill ("#FF1493");
                     }
-                    else if (data.weather == "winther"){
+                    else if (data.weather == "winter"){
                         fill ("#C71585");
                     }
                     else if (data.weather == "spring"){
                         fill("#DB7093");
                     }
-                    rect(j * side, i * side, side, side);
                 } else if (matrix[i][j] == 0) {
                     fill('#acacac');
-                    rect(j * side, i * side, side, side);
                 } else if (matrix[i][j] == 3) {
                     if (data.weather == "summer"){
                         fill("#FF0000");
@@ -92,13 +89,12 @@ function setup() {
                     else if (data.weather == "autumn"){
                         fill ("#8B0000");
                     }
-                    else if (data.weather == "winther"){
+                    else if (data.weather == "winter"){
                         fill ("#FF6347");
                     }
                     else if (data.weather == "spring"){
                         fill("#DC143C");
                     }
-                    rect(j * side, i * side, side, side);
                 } else if (matrix[i][j] == 4) {
                     if (data.weather == "summer"){
                         fill("#1E90FF");
@@ -106,13 +102,12 @@ function setup() {
                     else if (data.weather == "autumn"){
                         fill ("#4169E1");
                     }
-                    else if (data.weather == "winther"){
+                    else if (data.weather == "winter"){
                         fill ("#0000FF");
                     }
                     else if (data.weather == "spring"){
                         fill("#00BFFF");
                     }
-                    rect(j * side, i * side, side, side);
                 } else if (matrix[i][j] == 5) {
                     if (data.weather == "summer"){
                         fill("#FFFF00");
@@ -120,13 +115,12 @@ function setup() {
                     else if (data.weather == "autumn"){
                         fill ("#CCCC00");
                     }
-                    else if (data.weather == "winther"){
+                    else if (data.weather == "winter"){
                         fill ("#0000FF");
                     }
                     else if (data.weather == "spring"){
                         fill("#FFFF66");
                     }
-                    rect(j * side, i * side, side, side);
               
                 }
                 else if (matrix[i][j] == 6) {
@@ -136,15 +130,14 @@ function setup() {
                     else if (data.weather == "autumn"){
                         fill ("#3d3d37");
                     }
-                    else if (data.weather == "winther"){
+                    else if (data.weather == "winter"){
                         fill ("#30302a");
                     }
                     else if (data.weather == "spring"){
                         fill("#30302f");
                     }
-                    rect(j * side, i * side, side, side);
-              
                 }
+                rect(j * side, i * side, side, side);
             }
         }
     }

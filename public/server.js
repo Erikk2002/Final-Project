@@ -139,13 +139,11 @@ function game() {
         weather = "autumn";
     }
     else if (exanak <= 50){
-        weather = "winther";
+        weather = "winter";
     }
     else if (exanak = 50){
         exanak = 0;
     }
-
-
 
     if (grassArr[0] !== undefined) {
         for (var i in grassArr) {
