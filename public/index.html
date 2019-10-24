@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Ստեփանակերտ</h1>
+            </tr>
+            <tr>
+                <h1>Էրիկ Ասրյան</h1>
+            </tr>
+            <tr>
+                <tr>
+                    <td> Եղանակ  </td>
+                    <td id="weather"></td> 
+                </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">Ծնվել է</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Կանաչը խոտն է, աճում է 8 ուղություններով: Այն սկսում է բազմանալ ութ ցիկլը մեկ:</td>
+                <td id="grassCount"></td>
+                <td id="grassLiveCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:pink;"></td>
+                <td>Վարդագույնը խոտակերն է, որը ուտում է խոտին:Ունենալով 35 կյանք նա կարողանում է շարժվել, եթե կյանքերը փոքր են  35-ից իր կյանքերը ավելացնում է խոտերի հաշվին ուտելով դրանք և բազմանում եթե կյանքերը մեծ է 15-ից, եթե 35  քայլից հետո խոտ չի ուտում մահանում է:Կարողանում է շարժվել միայն ազատ վանդակներով::</td>
+                <td id="grassEaterCount"></td>
+                <td id="grassEaterLiveCount"></td>
+            </tr>
+            <th scope="row">3</th>
+            <td scope="row" style="background-color:red;"></td>
+            <td>Կարմիրը գիշատիչն է, նա նույնպես խոտակերի նման կարողանում է շարժվել ուտել բազմանալ: Կյանքերը 70-են, ուտում է խոտակերին մահանում է 70 քայլից հետո:Կարողանում է շարժվել խոտով և ազատ վանդակներով:
+            </td>
+            <td id="predatorCount"></td>
+            <td id="predatorLiveCount"></td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td scope="row" style="background-color:#3977ff;"></td>
+            <td>Կապույտը ջուրն է որը տարածվում է ամբողջ քարտեզով: Տեսնելով 8 վանդակ ընտրում է մեկը և տարածվում: Վոչնչացնում է իր մեջ ընկած խոտակերին և գիշատիչին:</td>
+            <td id="watherCount"></td>
+            <td id="watherLiveCount"></td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td scope="row" style="background-color:#FFFF00;"></td>
+            <td>Իսկ Դեղինը ձուկ է:Չի բազմանում, չի մահանում շարժվում է միայն ջրում:</td>
+            <td id="fishCount"></td>
+            <td id="fishLiveCount"></td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td scope="row" style="background-color:black;"></td>
+            <td>Իսկ Սև մարդն է:Ուտում է խոտին, խոտակերին, գիշատիչին, կյանքերը 70-են, բազմանում է 100 քայլը մեկ, մահանում է ջրում:</td>
+            <td id="mardCount"></td>
+            <td id="mardLiveCount"></td>
+        </tr>
+        <tr>
+      
+        </tr>
+    </tbody>
+</table>
+</body>
+
+</html>
+        </tbody>
+    </table>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
